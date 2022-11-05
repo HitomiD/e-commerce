@@ -1,0 +1,113 @@
+/* FOOTER */
+.footer__top
+{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fcfcfc;
+}
+.footer__top__items
+{
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+.footer__top__title
+{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
+}
+.footer__top__icon
+{
+    width: 50px;
+    height: 26px;
+    margin: 0px 5px 5px 0px;
+}
+.footer__top__item
+{
+    margin-bottom: 15px;
+}
+.footer__top__item:last-child
+{
+    margin-bottom: 0px;
+}
+.footer__top__social-media-list
+{
+    padding-left: 0px;
+    margin: 0px;
+}
+.footer__top__social-media-item
+{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.footer__top__social-media-item:last-child
+{
+    margin-right: 0px;
+}
+.footer__top__info-list
+{
+    padding-left: 0px;
+    margin: 0px;
+}
+.footer__top__info-item
+{
+    font-size: 0.9rem;
+}
+.footer__top__info-icon
+{
+    margin-right: 2px;
+}
+.footer__bottom
+{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fefefe;
+}
+.footer__bottom__items
+{
+    padding: 15px 0px;
+    box-sizing: border-box;
+}
+.footer__bottom__copyright-text
+{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.footer__bottom__copyright-empretienda-logo
+{
+    margin-left: 5px;
+}
+.footer__bottom__datafiscal img
+{
+    height: 40px;
+    width: auto;
+}
+.footer__bottom__link
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+/* END FOOTER */
+.shop-list__item
+{
+    font-size: 0.9375rem;
+}
+.shop-list__item::after 
+{
+    content: '';
+    padding: 0px 10px;
+    display: inline-block;
+}
+.shop-list__item--pipe::after
+{
+    content: '|';
+    padding: 0px 20px;
+}
+.shop-list__item:last-child:after
+{
+    display: none;
+}
+.shop-list__link:hover
+{
+    color: inherit;
+}
