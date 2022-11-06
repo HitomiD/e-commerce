@@ -3,181 +3,216 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="csrf-token" content="GPcQtv3y4upKYPMKfUu6ReSyqybDSVw205u0nFJd">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Acient Gaming</title>
+    <title>Acient Gaming</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="shortcut icon" href="Imagenes/Logo.png" style="width:100%;height:100%">
-    <link href="Estilo.css" rel ="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" > 
+    <link rel="shortcut icon" href="Imagenes/Logo.png" style="width:100%;height:100%">
+    <link href="Estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- top bar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="w-100 d-flex align-items-center justify-content-between mx-3">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/Logo-nombre.png" alt="Acient gaming store" width="220">
-            </a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-            <div class="w-50">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
 
-                <form class="d-flex flex-nowrap input-group-lg" role="search">
-                    <input class="form-control" id="search-bar" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+    <body>
 
-                </form>
+        <!-- top bar -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="w-100 d-flex align-items-center justify-content-between mx-2">
+                <a class="navbar-brand" href="#">
+                    <!-- logo pantalla grande -->
+                    <img src="./assets/Logo-nombre.png" class="d-none d-sm-none d-lg-block" alt="Acient gaming store"
+                        width="220">
+                    <!-- logo pantalla media -->
+                    <img src="./assets/Logo-nombre.png" class="d-none d-md-block d-lg-none" alt="Acient gaming store"
+                        width="170">
+                    <!-- logo mobile -->
+                    <img src="./assets/Ico.png" class="d-md-none" alt="Acient gaming store" width="60">
 
+                </a>
+
+                <div class="" style="width: 60%;">
+
+                    <form class="d-flex flex-nowrap input-group d-none d-sm-none d-md-flex d-lg-flex" role="search">
+                        <input class="form-control" id="search-bar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <!-- en escritorio esta el boton de busqueda -->
+                        <button class="btn btn-outline-info d-none d-sm-block" id="search-btn"
+                            type="submit">Search</button>
+                    </form>
+
+                    <form class="d-flex flex-nowrap input-group d-md-none d-lg-none" role="search">
+                        <input class="form-control" id="search-bar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <!-- en mobile hay una lupa -->
+                        <button class="btn btn-outline-info d-md-none d-lg-none" id="search-btn" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+
+                </div>
+
+                <div class="d-flex">
+                    <!-- ver mas -->
+                    <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+
+                        <!-- carrito -->
+                        <button class="btn" type="button"><i class="fa-solid fa-cart-shopping fa-xl"></i></button>
+                    </button>
+                </div>
             </div>
+        </nav>
 
-        </li>
-        
-            <li class="mobile-menu-sidenav__list-item">
-                <a href="#register-modal" class="mobile-menu-sidenav__item-link" uk-toggle>Crear cuenta</a>
-            </li>
-            <li class="mobile-menu-sidenav__list-item mobile-menu-sidenav__list-item--divider">|</li>
-            <li class="mobile-menu-sidenav__list-item">
-                <a href="#login-modal" class="mobile-menu-sidenav__item-link" uk-toggle>Iniciar sesión</a>
-            </li>
-                            </ul>
+        <!-- second half -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
 
-            <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
 
-        </div>
-    </nav>
-   
-    <!-- second half -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__container uk-container">
+                    <div class="footer__top__items uk-grid-small uk-flex-between" uk-grid>
+                        <div class="footer__top__left uk-width-1-2@m uk-width-1-1">
+                            <div class="footer__top__item">
+                                <h5 class="footer__top__title text--primary">Medios de pago</h5>
+                                <div class="footer__top__icons uk-flex uk-flex-row uk-flex-wrap">
+                                    <img src="Imagenes/mercadopago.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/mastercard.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/visa.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/american-express.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/naranja.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/cabal.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/maestro.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/diners-club.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/nativa.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/argencard.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/pagofacil.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/rapipago.png" class="footer__top__icon" alt="Medio Pago">
+                                    <img src="Imagenes/efectivo.png" class="footer__top__icon" alt="Medio Pago">
+
+                                </div>
+                            </div>
+                            <div class="footer__top__item">
+                                <h5 class="footer__top__title text--primary">Medios de envío</h5>
+                                <div class="footer__top__icons uk-flex uk-flex-row uk-flex-wrap">
+                                    <img src="Imagenes/Correo Argentino.png" class="footer__top__icon"
+                                        alt="Medio de Envio">
+                                    <img src="Imagenes/Oca.png" alt="Medio de Envio">
+                                    <img src="Imagenes/Urbano.png" class="footer__top__icon" alt="Medio de Envio">
+                                    <img src="Imagenes/Andreani.png" class="footer__top__icon" alt="Medio de Envio">
+                                </div>
+                            </div>
                         </div>
-                    </li>
+                        <div class="footer__top__right uk-width-1-3@l uk-width-1-2@m uk-width-1-1">
+                            <div class="footer__top__item">
+                                <h5 class="footer__top__title text--primary">Nuestras redes sociales</h5>
+                                <ul class="footer__top__social-media-list uk-flex uk-flex-row uk-flex-wrap">
+                                    <li class="footer__top__social-media-item text--primary">
+                                        <a href="https://facebook.com/AcienteGaming"
+                                            class="footer__top__social-media-link" target="_blank">
+                                            <i class="fab fa-facebook-f footer__top__social-media-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__top__social-media-item text--primary">
+                                        <a href="https://twitter.com/AcienteGaming"
+                                            class="footer__top__social-media-link" target="_blank">
+                                            <i class="fab fa-twitter footer__top__social-media-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__top__social-media-item text--primary">
+                                        <a href="https://instagram.com/AcienteGaming"
+                                            class="footer__top__social-media-link" target="_blank">
+                                            <i class="fab fa-instagram footer__top__social-media-icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__top__item">
+                                <h5 class="footer__top__title text--primary">Contacto</h5>
+                                <div class="footer__top__icons uk-flex uk-flex-row uk-flex-wrap">
+                                    <ul class="footer__top__info-list uk-flex uk-flex-column">
+                                        <li class="footer__top__info-item text--primary">
+                                            <a href="mailto:lmartinez@alumnos.unsada.edu.ar"
+                                                class="footer__top__info-link" target="_blank">
+                                                <i class="fas fa-envelope footer__top__info-icon"></i>
+                                                AcientGaming@gmail.com
+                                            </a>
+                                        </li>
+                                        <li class="footer__top__info-item text--primary">
+                                            <a href="sms:02326453079" class="footer__top__info-link" target="_blank">
+                                                <i class="fas fa-phone footer__top__info-icon"></i> 02326453079
+                                            </a>
+                                        </li>
+                                        <li class="footer__top__info-item text--primary">
+                                            <i class="fas fa-map-marker-alt footer__top__info-icon"></i> Avenida
+                                            Guiraldes 689
+                                        </li>
+                                        <li class="footer__top__info-item text--primary">
+                                            <a href="#regret-modal" uk-toggle>
 
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-        
-            <footer class="footer">
-                <div class="footer__top">
-                    <div class="footer__container uk-container">
-                        <div class="footer__top__items uk-grid-small uk-flex-between" uk-grid>
-                            <div class="footer__top__left uk-width-1-2@m uk-width-1-1">
-                                <div class="footer__top__item">
-                                    <h5 class="footer__top__title text--primary">Medios de pago</h5>
-                                    <div class="footer__top__icons uk-flex uk-flex-row uk-flex-wrap">
-                                        <img src="Imagenes/mercadopago.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/mastercard.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/visa.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/american-express.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/naranja.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/cabal.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/maestro.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/diners-club.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/nativa.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/argencard.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/pagofacil.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/rapipago.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        <img src="Imagenes/efectivo.png" class="footer__top__icon" alt="Medio Pago"> 
-                                        
-                                    </div>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="footer__top__item">
-                                    <h5 class="footer__top__title text--primary">Medios de envío</h5>
-                                    <div class="footer__top__icons uk-flex uk-flex-row uk-flex-wrap">
-                                        <img src="Imagenes/Correo Argentino.png" class="footer__top__icon" alt="Medio de Envio"> 
-                                        <img src="Imagenes/Oca.png" alt="Medio de Envio"> 
-                                        <img src="Imagenes/Urbano.png" class="footer__top__icon" alt="Medio de Envio"> 
-                                        <img src="Imagenes/Andreani.png" class="footer__top__icon" alt="Medio de Envio"> 
-                                    </div>
-                                </div>
-                            </div><div class="footer__top__right uk-width-1-3@l uk-width-1-2@m uk-width-1-1">
-                                <div class="footer__top__item">
-            <h5 class="footer__top__title text--primary">Nuestras redes sociales</h5>
-            <ul class="footer__top__social-media-list uk-flex uk-flex-row uk-flex-wrap">
-                                                        <li class="footer__top__social-media-item text--primary">
-                        <a href="https://facebook.com/AcienteGaming" class="footer__top__social-media-link" target="_blank">
-                            <i class="fab fa-facebook-f footer__top__social-media-icon"></i>
-                        </a>
-                    </li>
-                                                                                            <li class="footer__top__social-media-item text--primary">
-                        <a href="https://twitter.com/AcienteGaming" class="footer__top__social-media-link" target="_blank">
-                            <i class="fab fa-twitter footer__top__social-media-icon"></i>
-                        </a>
-                    </li>
-                                                                                            <li class="footer__top__social-media-item text--primary">
-                        <a href="https://instagram.com/AcienteGaming" class="footer__top__social-media-link" target="_blank">
-                            <i class="fab fa-instagram footer__top__social-media-icon"></i>
-                        </a>
-                    </li>
-            </ul>
-        </div>
-                                                        <div class="footer__top__item">
-                                    <h5 class="footer__top__title text--primary">Contacto</h5>
-                                    <div class="footer__top__icons uk-flex uk-flex-row uk-flex-wrap">
-                                        <ul class="footer__top__info-list uk-flex uk-flex-column">
-                                            <li class="footer__top__info-item text--primary">
-                                                <a href="mailto:lmartinez@alumnos.unsada.edu.ar" class="footer__top__info-link" target="_blank">
-                                                    <i class="fas fa-envelope footer__top__info-icon"></i> AcientGaming@gmail.com
-                                                </a>
-                                            </li>
-                                                                                    <li class="footer__top__info-item text--primary">
-                                                    <a href="sms:02326453079" class="footer__top__info-link" target="_blank">
-                                                        <i class="fas fa-phone footer__top__info-icon"></i> 02326453079
-                                                    </a>
-                                                </li>
-                                                                                                                        <li class="footer__top__info-item text--primary">
-                                                    <i class="fas fa-map-marker-alt footer__top__info-icon"></i> Avenida Guiraldes 689
-                                                </li>
-                                                                                <li class="footer__top__info-item text--primary">
-                                                <a href="#regret-modal" uk-toggle>
-                                                    
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-         
-</body>
+            </div>
+
+    </body>
 
 </html>
