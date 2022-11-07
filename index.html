@@ -30,89 +30,92 @@
     </head>
 
     <body>
+        <div class="top-bar-container fixed-top">
+            <!-- top bar -->
+            <nav class="navbar navbar-expand-lg" id="top-bar">
+                <div class="w-100 d-flex align-items-center justify-content-between mx-2">
+                    <a class="navbar-brand" href="#">
+                        <!-- logo pantalla grande -->
+                        <img src="./assets/Logo-nombre-claro.png" class="d-none d-sm-none d-lg-block"
+                            alt="Acient gaming store" width="260">
+                        <!-- logo pantalla media -->
+                        <img src="./assets/Logo-nombre-claro.png" class="d-none d-md-block d-lg-none"
+                            alt="Acient gaming store" width="170">
+                        <!-- logo mobile -->
+                        <img src="./assets/Ico.png" class="d-md-none" alt="Acient gaming store" width="60">
 
-        <!-- top bar -->
-        <nav class="navbar navbar-expand-lg" id="top-bar">
-            <div class="w-100 d-flex align-items-center justify-content-between mx-2">
-                <a class="navbar-brand" href="#">
-                    <!-- logo pantalla grande -->
-                    <img src="./assets/Logo-nombre-claro.png" class="d-none d-sm-none d-lg-block"
-                        alt="Acient gaming store" width="260">
-                    <!-- logo pantalla media -->
-                    <img src="./assets/Logo-nombre-claro.png" class="d-none d-md-block d-lg-none"
-                        alt="Acient gaming store" width="170">
-                    <!-- logo mobile -->
-                    <img src="./assets/Ico.png" class="d-md-none" alt="Acient gaming store" width="60">
+                    </a>
+                    <!-- barra de busqueda -->
+                    <div class="" style="width: 60%;">
 
-                </a>
-                <!-- barra de busqueda -->
-                <div class="" style="width: 60%;">
+                        <form class="d-flex flex-nowrap input-group d-none d-sm-none d-md-flex d-lg-flex" role="search">
+                            <input class="form-control" id="search-bar" type="search"
+                                placeholder="¿Qué estas buscando?" aria-label="Search">
+                            <!-- en escritorio esta el boton de busqueda -->
+                            <button class="btn btn-outline-info d-none d-sm-block" id="search-btn"
+                                type="submit">Buscar</button>
+                        </form>
 
-                    <form class="d-flex flex-nowrap input-group d-none d-sm-none d-md-flex d-lg-flex" role="search">
-                        <input class="form-control" id="search-bar" type="search"
-                            placeholder="¿Que estas buscando? Escribilo acá" aria-label="Search">
-                        <!-- en escritorio esta el boton de busqueda -->
-                        <button class="btn btn-outline-info d-none d-sm-block" id="search-btn"
-                            type="submit">Buscar</button>
-                    </form>
+                        <form class="d-flex flex-nowrap input-group d-md-none d-lg-none" role="search">
+                            <input class="form-control" id="search-bar" type="search" placeholder="Buscar"
+                                aria-label="Buscar">
+                            <!-- en mobile hay una lupa -->
+                            <button class="btn btn-outline-info d-md-none d-lg-none" id="search-btn" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
 
-                    <form class="d-flex flex-nowrap input-group d-md-none d-lg-none" role="search">
-                        <input class="form-control" id="search-bar" type="search" placeholder="" aria-label="Buscar">
-                        <!-- en mobile hay una lupa -->
-                        <button class="btn btn-outline-info d-md-none d-lg-none" id="search-btn" type="submit"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-
+                    </div>
+                    <!-- botones barra de busqueda -->
+                    <div class="d-flex">
+                        <!-- User -->
+                        <button class="btn" type="button"><i class="fa-solid fa-user fa-xl"
+                                style="filter: invert(100%);"></i></button>
+                        <!-- carrito -->
+                        <button class="btn" type="button"><i class="fa-solid fa-cart-shopping fa-xl"
+                                style="filter:invert(100%);"></i></button>
+                        <!-- ver mas -->
+                        <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" style="filter:invert(100%);"></span>
+                        </button>
+                    </div>
                 </div>
-                <!-- botones barra de busqueda -->
-                <div class="d-flex">
-                    <!-- User -->
-                    <button class="btn" type="button"><i class="fa-solid fa-user fa-xl"
-                            style="filter: invert(100%);"></i></button>
-                    <!-- carrito -->
-                    <button class="btn" type="button"><i class="fa-solid fa-cart-shopping fa-xl"
-                            style="filter:invert(100%);"></i></button>
-                    <!-- ver mas -->
-                    <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" style="filter:invert(100%);"></span>
-                    </button>
-                </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- top bar navigation -->
-        <nav class="navbar navbar-expand-lg" id="navigation">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
+            <!-- top bar navigation -->
+            <nav class="navbar navbar-expand-lg" id="navigation">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                    </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <!-- FIN top bar-->
+            </nav>
+            <!-- FIN top bar-->
+        </div>
+
 
         <!-- CARRUSEL-->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -141,10 +144,71 @@
         </div>
         <!-- FIN CARRUSEL-->
 
+        <div class="seccion-ofertas">
 
-        <!--
-                Footer
-            -->
+            <div>
+                <h1 class="header">Ofertas especiales!</h1>
+            </div>
+
+            <!-- grid placeholder ofertas -->
+            <div class="row row-cols-1 row-cols-md-5 row-cols-sm-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--Footer-->
         <footer class="footer">
             <div class="footer__top">
                 <div class="footer__container uk-container">
